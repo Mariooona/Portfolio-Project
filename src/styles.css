@@ -1,7 +1,59 @@
+:root {
+  --branding-color: rgb(137, 30, 47);
+  --heading-color: rgb(224, 44, 44);
+  --secondary-color: rgb(244, 166, 179);
+  --heading-font-family: "Merriweather", serif;
+  --default-font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
 h1 {
-  color: red;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 60px;
 }
 h2 {
+  color: var(--secondary-color);
+}
+p {
+  color: var(--secondary-color);
+  font-weight: normal;
+}
+.hero {
+  text-align: center;
+  background: linear-gradient(
+    109.6deg,
+    rgb(6, 2, 2) 32.4%,
+    rgb(137, 30, 47) 98.8%
+  );
+  padding: 220px 20px;
+}
+.hero p {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.hero h2 {
+  font-weight: normal;
+  line-height: 2;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
+}
+.btn-branding {
+  background: var(--branding-color);
+  color: rgb(14, 1, 4);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 20px;
+}
+.btn-branding :hover {
+  color: rgb(14, 1, 4);
+  background: rgb(244, 166, 179);
 }
