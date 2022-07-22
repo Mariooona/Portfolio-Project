@@ -1,28 +1,29 @@
 :root {
   --branding-color: rgb(137, 30, 47);
   --heading-color: rgb(224, 44, 44);
-  --secondary-color: rgb(244, 166, 179);
+  --secondary-color: rgb(244, 167, 180);
   --heading-font-family: "Merriweather", serif;
   --default-font-family: "Josefin Sans", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
+  background-color: rgb(243, 238, 238);
 }
-
 h1 {
   color: var(--heading-color);
   font-family: var(--heading-font-family);
   font-weight: bold;
   font-size: 80px;
 }
-h2 {
+h2,
+h3 {
   color: var(--heading-color);
   font-size: 50px;
   text-align: center;
 }
 p {
-  color: var(--branding-color: rgb(137, 30, 47) ;);
+  color: var(--branding-color);
   font-weight: normal;
   font-size: 26px;
   display: block;
@@ -48,6 +49,30 @@ p {
   font-weight: normal;
   line-height: 2;
   font-size: 30px;
+}
+.about-section {
+  padding: 150px 20px;
+}
+.about-section h1 {
+  font-size: 80px;
+  text-align: center;
+}
+h3,
+.about-section h2 {
+  font-size: 30px;
+}
+.btn-about,
+.btn-get-contacted {
+  display: block;
+  text-align: center;
+  background: var(--branding-color);
+  color: rgb(14, 1, 4);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 20px 20px;
+  max-width: 500px;
 }
 .btn-branding {
   background: var(--branding-color);
@@ -83,8 +108,37 @@ p {
   h2 {
     font-size: 35px;
   }
+  p {
+    font-size: 20px;
+    text-align: center;
+    max-width: max-content;
+  }
   .project-description {
     padding: 0;
     text-align: center;
   }
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+  .about-section h1 {
+    font-size: 50px;
+  }
+  .about-section h2 {
+    font-size: 20px;
+  }
+  .about-section btn-about {
+    font-size: 10px;
+    max-width: 100px;
+    padding: 10px auto;
+  }
+}
+.technical-skills {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+}
+.fa-solid,
+.a-brands {
+  padding: 10px auto;
 }
