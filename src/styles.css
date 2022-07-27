@@ -51,7 +51,7 @@ p {
   font-size: 30px;
 }
 .content-container {
-  padding: 150px 20px;
+  padding: 200px 20px;
 }
 .content h1 {
   font-size: 80px;
@@ -103,6 +103,34 @@ content-container .btn-get-contacted {
   padding: 12px 20px;
   max-width: 150px;
 }
+nav {
+  padding: 20px 0;
+}
+
+nav ul,
+.navbar-heading {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--heading-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 50px;
@@ -142,6 +170,18 @@ content-container .btn-get-contacted {
     font-size: 10px;
     max-width: 100px;
     padding: 10px auto;
+  }
+  .navbar-heading {
+    margin: 0;
+    padding: 0 0 0 5px;
+    font-size: 15px;
+  }
+  nav li {
+    display: inline;
+    list-style: none;
+    line-height: 30px;
+    margin-left: 4px;
+    font-size: 12px;
   }
 }
 .content {
