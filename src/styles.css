@@ -151,3 +151,14 @@ p {
 .a-brands {
   padding: 10px auto;
 }
+.btn-launch-app{
+  display: block;
+  text-align: center;
+  background: var(--heading-color);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 20px;
+  max-width: 300px;
+}
