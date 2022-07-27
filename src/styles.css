@@ -50,21 +50,23 @@ p {
   line-height: 2;
   font-size: 30px;
 }
-.about-section {
+.content-container {
   padding: 150px 20px;
 }
-.about-section h1 {
+.content h1 {
   font-size: 80px;
   text-align: center;
 }
-.about-section h2,
-h3 {
+.content h2,h3
+ {
   font-size: 40px;
-}
-.about-section p {
+  margin: 20px 0 0;
+  line-height: 1.5;
+ }
+.content p {
   font-size: 30px;
 }
-.btn-about,
+.btn-about,content-container
 .btn-get-contacted {
   display: block;
   text-align: center;
@@ -120,22 +122,25 @@ h3 {
     padding: 0;
     text-align: center;
   }
-  .about-section {
+  .content-container {
     text-align: center;
     padding: 0;
   }
-  .about-section h1 {
+  .content h1 {
     font-size: 50px;
   }
-  .about-section h2,
+  .content h2,
   h3 {
     font-size: 20px;
   }
-  .about-section btn-about {
+  .content btn-about {content-container
     font-size: 10px;
     max-width: 100px;
     padding: 10px auto;
   }
+}
+.content {
+  margin: 30px;
 }
 .technical-skills {
   display: block;
