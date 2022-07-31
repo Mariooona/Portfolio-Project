@@ -55,7 +55,7 @@ p {
   font-size: 30px;
 }
 .content-container {
-  padding: 200px 20px;
+  padding: 80px 10px;
 }
 .content h1 {
   font-size: 80px;
@@ -82,6 +82,10 @@ content-container .btn-get-contacted {
   line-height: 30px;
   padding: 20px 20px;
   max-width: 500px;
+}
+img .portfolio-picture {
+  max-width: 50%;
+  height: auto;
 }
 .btn-branding {
   background: var(--branding-color);
