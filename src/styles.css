@@ -1,22 +1,34 @@
 :root {
   --branding-color: rgb(137, 30, 47);
-  --heading-color: rgb(224, 44, 44);
-  --secondary-color: rgb(244, 167, 180);
-  --heading-font-family: "Merriweather", serif;
+  --heading-color: rgb(197, 29, 29);
+  --secondary-color: rgb(63, 23, 29);
+  --heading-font-family: Cormorant Garamond, serif;
   --default-font-family: "Josefin Sans", sans-serif;
 }
 
 body {
+  height: 100%;
+  background: url(../images/sunset.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: var(--default-font-family);
   background-color: rgb(243, 238, 238);
 }
+
 h1 {
-  color: var(--heading-color);
+  color: var(--secondary-color);
   font-family: var(--heading-font-family);
   font-weight: bold;
-  font-size: 80px;
+  font-size: 100px;
 }
-h2,
+h2 {
+  color: var(--secondary-color);
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
 h3 {
   color: var(--heading-color);
   font-size: 50px;
@@ -26,20 +38,28 @@ h4 {
   font-size: 50px;
   font-weight: bold;
 }
+h6 {
+  color: white;
+  font-size: 20px;
+}
 p {
   color: var(--branding-color);
   font-weight: normal;
   font-size: 26px;
   display: block;
 }
+.project-description {
+  color: #fff;
+}
+.logo {
+  font-size: 30px;
+}
 .hero {
   text-align: center;
-  background: linear-gradient(
-    109.6deg,
-    rgb(6, 2, 2) 32.4%,
-    rgb(137, 30, 47) 98.8%
-  );
-  padding: 160px 20px;
+  padding: 180px 20px;
+}
+.hero h1 {
+  color: #fff;
 }
 .hero p {
   font-size: 30px;
@@ -51,40 +71,29 @@ p {
 }
 .hero h2 {
   font-weight: normal;
-  line-height: 2;
-  font-size: 30px;
+  line-height: 1.5;
+  font-size: 40px;
+  font-weight: bold;
 }
 .content-container {
-  padding: 80px 10px;
+  padding: 40px 0;
 }
 .content h1 {
   font-size: 80px;
   text-align: center;
 }
-.content h2,
-h3 {
-  font-size: 40px;
+.content h3 {
+  font-size: 50px;
   margin: 20px 0 0;
   line-height: 1.5;
+  font-weight: bold;
 }
 .content p {
-  font-size: 30px;
-}
-.btn-about,
-content-container .btn-get-contacted {
-  display: block;
-  text-align: center;
-  background: var(--branding-color);
-  color: rgb(14, 1, 4);
-  font-weight: bold;
-  border-radius: 5px;
   font-size: 25px;
-  line-height: 30px;
-  padding: 20px 20px;
-  max-width: 500px;
+  color: #fff;
 }
 img .portfolio-picture {
-  max-width: 50%;
+  max-width: 500px;
   height: auto;
 }
 .btn-branding {
@@ -95,10 +104,12 @@ img .portfolio-picture {
   font-size: 18px;
   line-height: 26px;
   padding: 12px 20px;
+  max-width: 300px;
 }
-.btn-branding :hover {
+.btn-branding:hover {
   color: rgb(14, 1, 4);
-  background: rgb(244, 166, 179);
+  background: white;
+  border: 1px solid #fff;
 }
 .btn-branding-outline {
   display: block;
@@ -113,6 +124,7 @@ img .portfolio-picture {
 }
 nav {
   padding: 20px 0;
+  text-transform: uppercase;
 }
 
 nav ul,
@@ -123,7 +135,7 @@ nav ul,
 nav li {
   display: inline;
   list-style: none;
-  line-height: 40px;
+  line-height: 30px;
   margin-left: 30px;
   font-size: 20px;
 }
@@ -145,6 +157,8 @@ nav li.active a {
   display: block;
   text-align: center;
   font-size: 40px;
+  color: var(--secondary-color);
+  padding: 10px auto;
 }
 .fa-solid,
 .a-brands {
@@ -153,6 +167,7 @@ nav li.active a {
 .btn-launch-app {
   display: block;
   text-align: center;
+  position: center;
   background: var(--heading-color);
   font-weight: bold;
   border-radius: 5px;
@@ -161,7 +176,14 @@ nav li.active a {
   padding: 12px 20px;
   max-width: 300px;
 }
+.contact-link {
+  color: black;
+  font-weight: bold;
+  padding: 10px auto;
+}
 footer {
+  position: relative;
+  bottom: 0;
   width: 100%;
   margin: 70px 0 30px 0;
 }
@@ -175,11 +197,12 @@ footer .contact-box {
   max-width: 900px;
   display: block;
   text-align: center;
+  position: center;
 }
 
 footer .social-links a {
   margin: 0 25px;
-  color: black;
+  color: white;
   font-size: 24px;
   padding: 10px;
   transition: all 100ms ease-in-out;
@@ -188,7 +211,10 @@ footer .social-links a:hover {
   color: var(--branding-color);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+  nav .logo {
+    font-size: 25px;
+  }
   .navbar-heading {
     margin: 0;
     padding: 0 0 0 5px;
@@ -198,30 +224,23 @@ footer .social-links a:hover {
     display: inline;
     list-style: none;
     line-height: 30px;
-    margin-left: 4px;
+    margin-left: 15px;
     font-size: 12px;
   }
-  h1 {
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
     font-size: 50px;
   }
   .hero h2 {
     font-size: 20px;
   }
-  h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  h4 {
-    font-size: 25px;
-  }
+
   h6 {
     font-size: 10px;
   }
-  p {
-    font-size: 18px;
-    text-align: center;
-    max-width: max-content;
-  }
+
   .project-description {
     padding: 0;
     text-align: center;
@@ -230,22 +249,26 @@ footer .social-links a:hover {
     text-align: center;
     padding: 0;
   }
-  .content h1 {
+  .content-container h1 {
     font-size: 50px;
   }
-  .content h2,
-  h3 {
-    font-size: 30px;
-  }
-  .content contact-link {
+
+  .content {
     display: block;
     text-align: center;
-    font-size: 20px;
+    max-width: fit-content;
   }
-  .content btn-about {
-    font-size: 10px;
-    max-width: 100px;
-    padding: 10px auto;
+
+  .content h3 {
+    font-size: 30px;
+  }
+  .content p {
+    font-size: 20px;
+    color: black;
+  }
+  .content .technical-skills {
+    font-size: 30px;
+    color: #fff;
   }
 
   footer .contact-box {
@@ -259,10 +282,12 @@ footer .social-links a:hover {
     border-radius: 3px;
     font-size: 15px;
     line-height: 16px;
-    padding: 12px 10px;
+    padding: 10px auto;
     text-align: center;
   }
   footer .social-links {
     margin: 0 20px;
+    font-size: 10px;
+    padding: 5px;
   }
 }
