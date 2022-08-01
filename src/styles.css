@@ -30,7 +30,7 @@ h2 {
   font-family: var(--heading-font-family);
 }
 h3 {
-  color: var(--heading-color);
+  color: black);
   font-size: 50px;
   text-align: center;
 }
@@ -87,6 +87,7 @@ p {
   margin: 20px 0 0;
   line-height: 1.5;
   font-weight: bold;
+  color: var(--heading-color);
 }
 .content p {
   font-size: 25px;
@@ -157,7 +158,7 @@ nav li.active a {
   display: block;
   text-align: center;
   font-size: 40px;
-  color: var(--secondary-color);
+  color: black;
   padding: 10px auto;
 }
 .fa-solid,
@@ -180,6 +181,9 @@ nav li.active a {
   color: black;
   font-weight: bold;
   padding: 10px auto;
+}
+h3.My-work {
+  color:var(--heading-color)
 }
 footer {
   position: relative;
